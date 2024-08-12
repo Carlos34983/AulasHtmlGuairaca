@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>aula 6 - introdução ao CSS</title>
         <meta charset="UTF-8">
-        <title>aula 5</title>
+
+        <style>
+            h2 {
+                color:red;
+            }
+            span {
+                font-weight: bold;
+            }
+        </style>
+        <!-- vinculando arquivo externo -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="#" method="POST">
-            <label for="nome">nome:</label>
-            <input type="text" id="name" name="nome" required>
-            <br><br>
-            <label for="email">email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <label for="idade">idade:</label>
-            <input type="number" id="idade" name="idade" required>
-            <br><br>
-            <label type="mensagem">mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <br><br>
-            <input type="submit" value="Enviar">
-        </form>
+        <!-- exemplo de CSS inline -->
+        <h1 style="color:blue;">titulo em azul</h1>
+        <p style="font-size: 16px;">este é um paragrafo com fonte de 16px</p>
+
+        <!-- exemplo de CSS Embed -->
+        <h2>titulo em vermelho</h2>
+        <span>span em negrito</span>
+
+        <!-- exemplo de css com arquivo css -->
+        <h4 class="title">titulo com css externo</h4>
+        <p id="text-primary">texto primario</p>
     </body>
 </html>
