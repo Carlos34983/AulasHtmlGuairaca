@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>aula 6 - introdução ao CSS</title>
+        <title>aula 11 iframe</title>
         <meta charset="UTF-8">
-
-        <style>
-            h2 {
-                color:red;
-            }
-            span {
-                font-weight: bold;
-            }
-        </style>
-        <!-- vinculando arquivo externo -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- exemplo de CSS inline -->
-        <h1 style="color:blue;">titulo em azul</h1>
-        <p style="font-size: 16px;">este é um paragrafo com fonte de 16px</p>
+        <header class="header">
+            <h1>bem vindo a nossa pagina</h1>
+        </header>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">contatos</a></li>
+            </ul>
+        </nav>
 
-        <!-- exemplo de CSS Embed -->
-        <h2>titulo em vermelho</h2>
-        <span>span em negrito</span>
+        <section class="features">
+            <h2>introdução</h2>
+            <p>esta é uma pagina de introdução</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgJsscicNXDLByjBTIW686MgoEP5x_ASV56zGcZBgt1NcQKw/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </section>
 
-        <!-- exemplo de css com arquivo css -->
-        <h4 class="title">titulo com css externo</h4>
-        <p id="text-primary">texto primario</p>
+        <footer class="footer">
+            <p>&copy: 2024 Uniguiraca
+                todos os direitos reservados
+            </p>
+        </footer>
     </body>
 </html>
