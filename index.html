@@ -1,19 +1,67 @@
+
+<!-- salvar no git -->
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title> posicionamento css </title>
         <meta charset="UTF-8">
+        <title>catálogos de filmes</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- exemplo de posicionamento absoluto -->
-         <div class="relative-container">
-            <div class="absolute-item">
-                Conteudo Absoluto
+        <header>
+            <h1>Catálogo de Filmes</h1>
+        </header>
+        <main>
+            <div class="movie-grid">
+                <div class="movie">
+                    <img src="https://i.ytimg.com/vi/mXWZQBVc1V4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC-O_-TyGZ6OLFZkdlsW3RocHCtqg" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
+                <div class="movie">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUx63obx3MOu05Bd7sHIxCY_8Pl_K-EtrBHEA6gzV4IqugIYjrZnl2gwvEFJdo_vtiXTw&usqp=CAU" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
+                <div class="movie">
+                    <img src="data:image/jpeg;base64,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" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
+                <div class="movie">
+                    <img src="#" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
+                <div class="movie">
+                    <img src="#" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
+                <div class="movie">
+                    <img src="#" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
+                <div class="movie">
+                    <img src="#" alt="imagem do filme">
+                    <h2>titulo do filme</h2>
+                    <p>Uma aventura épica no espaço, onde o Héroi descobre que pode mudar todo o destino da gálaxia</p>    
+                    <button href="#">assistir Trailer</button>              
+                </div>
             </div>
-            <div class="content">
-                Conteudo Normal
-            </div>
-         </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Cátalogo de filmes.
+                Todos direitos reservados.
+            </p>
+        </footer>
     </body>
 </html>
